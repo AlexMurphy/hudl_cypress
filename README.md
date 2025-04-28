@@ -19,8 +19,8 @@ cypress/
 
 - **`cypress/e2e/`**: Contains E2E test files. For example, `login.cy.js` tests the login flow.credentials and other test inputs.
 - **`cypress/support/`**:
-  - `e2e.js`: Configures additional support features, such as visual regression commands.
-- **`cypress.config.js`**: Cypress configuration file, including base URL and visual regression setup.
+  - `e2e.js`: Configures additional support features.
+- **`cypress.config.js`**: Cypress configuration file, including base URL.
 - **`package.json`**: Defines project dependencies and scripts.
 
 ## Features
@@ -49,6 +49,12 @@ cypress/
 ## Usage
 
 ### Running Tests
+
+- Set test credentials:
+  ```bash
+  export CYPRESS_EMAIL_ADDRESS=test_email_address
+  export CYPRESS_EMAIL_PASSWORD=test_password
+  ```
 
 - Run all tests:
   ```bash
